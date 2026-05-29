@@ -27,6 +27,15 @@
     <% String str = (boolean) request.getAttribute("flg") ? "true" : "false"; %>
     <%= str %>
 </h1>
+<h1>
+    <c:if test="${ flg }">true</c:if>
+</h1>
+<h1>
+    <c:choose>
+        <c:when test="${ flg }">true</c:when>
+        <c:when test="!${ flg }">false</c:when>
+    </c:choose>
+</h1>
 
 <br/>
 <a href="index.jsp">index</a>
