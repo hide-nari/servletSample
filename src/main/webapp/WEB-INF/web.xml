@@ -3,4 +3,23 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
          version="6.0">
+
+    <context-param>
+        <param-name>conParam</param-name>
+        <param-value>コンテキストパラメータ</param-value>
+    </context-param>
+
+    <servlet>
+        <servlet-name>Person</servlet-name>
+        <servlet-class>com.hidenari.servletsample.PersonServlet</servlet-class>
+        <init-param>
+            <param-name>initMsg</param-name>
+            <param-value>メッセージ</param-value>
+        </init-param>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>Person</servlet-name>
+        <url-pattern>/people</url-pattern>
+    </servlet-mapping>
 </web-app>
