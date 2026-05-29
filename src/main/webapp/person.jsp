@@ -14,6 +14,20 @@
 <h1>
     ${ conParam }
 </h1>
+<h1>
+    <%
+        if ((boolean) request.getAttribute("flg")) {
+            out.println("true");
+        } else {
+            out.println("false");
+        }
+    %>
+</h1>
+<h1>
+    <% String str = (boolean) request.getAttribute("flg") ? "true" : "false"; %>
+    <%= str %>
+</h1>
+
 <br/>
 <a href="index.jsp">index</a>
 </body>
