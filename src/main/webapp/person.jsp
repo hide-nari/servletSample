@@ -39,9 +39,17 @@
     </c:choose>
 </h1>
 
-<h1>
-    <c:out value="あいうえお"/>
-</h1>
+<c:forEach items="${lists}" var="list">
+    <h1>
+        <c:out value="${list}"/>
+    </h1>
+</c:forEach>
+
+<c:forTokens items="${numbersStr}" delims="," var="number">
+    <h1>
+        <c:out value="${number}"/>
+    </h1>
+</c:forTokens>
 
 <br/>
 <a href="index.jsp">index</a>
