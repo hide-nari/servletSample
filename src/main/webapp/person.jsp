@@ -8,16 +8,16 @@
     <title>Person</title>
 </head>
 <body>
-<h1>
+<div>
     <%= request.getAttribute("initMsg") %>
-</h1>
-<h1>
+</div>
+<div>
     ${ initMsg }
-</h1>
-<h1>
+</div>
+<div>
     ${ conParam }
-</h1>
-<h1>
+</div>
+<div>
     <%
         if ((boolean) request.getAttribute("flg")) {
             out.println("true");
@@ -25,51 +25,51 @@
             out.println("false");
         }
     %>
-</h1>
-<h1>
+</div>
+<div>
     <% String str = (boolean) request.getAttribute("flg") ? "true" : "false"; %>
     <%= str %>
-</h1>
-<h1>
+</div>
+<div>
     <c:if test="${ flg }">true</c:if>
-</h1>
-<h1>
+</div>
+<div>
     <c:choose>
         <c:when test="${ flg }">true</c:when>
         <c:otherwise>false</c:otherwise>
     </c:choose>
-</h1>
+</div>
 
 <c:forEach items="${lists}" var="list">
-    <h1>
+    <div>
         <c:out value="${list}"/>
-    </h1>
+    </div>
 </c:forEach>
 
 <c:forTokens items="${numbersStr}" delims="," var="number">
-    <h1>
+    <div>
         <c:out value="${number}"/>
-    </h1>
+    </div>
 </c:forTokens>
 
-<h1>
+<div>
     <c:set var="name" value="taro"/>
     <c:out value="${name}"/>
     <c:remove var="name"/>
     <c:out value="${name}"/>
-</h1>
+</div>
 
-<h1>
+<div>
     <fmt:formatNumber value="1234567890" pattern="###,###"/>
-</h1>
+</div>
 
-<h1>
+<div>
     <jsp:useBean id="date" class="java.util.Date"/>
     <fmt:formatDate value="${date}" type="DATE"/><br>
     <fmt:formatDate value="${date}" type="TIME"/><br>
     <fmt:formatDate value="${date}" type="BOTH"/><br>
     <fmt:formatDate value="${date}" pattern="yyyyMMdd_HHmmss"/><br>
-</h1>
+</div>
 
 <br/>
 <a href="index.jsp">index</a>
