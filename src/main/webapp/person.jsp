@@ -35,7 +35,7 @@
 <h1>
     <c:choose>
         <c:when test="${ flg }">true</c:when>
-        <c:when test="!${ flg }">false</c:when>
+        <c:otherwise>false</c:otherwise>
     </c:choose>
 </h1>
 
@@ -50,6 +50,13 @@
         <c:out value="${number}"/>
     </h1>
 </c:forTokens>
+
+<h1>
+    <c:set var="name" value="taro"/>
+    <c:out value="${name}"/>
+    <c:remove var="name"/>
+    <c:out value="${name}"/>
+</h1>
 
 <br/>
 <a href="index.jsp">index</a>
