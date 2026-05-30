@@ -31,11 +31,12 @@
     <%= str %>
 </div>
 <div>
-    <c:if test="${ flg }">true</c:if>
+    <c:if test="${flg}">true</c:if>
+    <c:if test="${!flg}">false</c:if>
 </div>
 <div>
     <c:choose>
-        <c:when test="${ flg }">true</c:when>
+        <c:when test="${flg}">true</c:when>
         <c:otherwise>false</c:otherwise>
     </c:choose>
 </div>
