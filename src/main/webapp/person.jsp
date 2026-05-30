@@ -1,5 +1,6 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="jakarta.tags.core" %>
+<%@ taglib prefix="fmt" uri="jakarta.tags.fmt" %>
 
 <!DOCTYPE html>
 <html>
@@ -56,6 +57,18 @@
     <c:out value="${name}"/>
     <c:remove var="name"/>
     <c:out value="${name}"/>
+</h1>
+
+<h1>
+    <fmt:formatNumber value="1234567890" pattern="###,###"/>
+</h1>
+
+<h1>
+    <jsp:useBean id="date" class="java.util.Date"/>
+    <fmt:formatDate value="${date}" type="DATE"/><br>
+    <fmt:formatDate value="${date}" type="TIME"/><br>
+    <fmt:formatDate value="${date}" type="BOTH"/><br>
+    <fmt:formatDate value="${date}" pattern="yyyyMMdd_HHmmss"/><br>
 </h1>
 
 <br/>
