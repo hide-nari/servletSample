@@ -17,9 +17,19 @@
             <param-value>メッセージ</param-value>
         </init-param>
     </servlet>
-    
+
     <servlet-mapping>
         <servlet-name>Person</servlet-name>
         <url-pattern>/people</url-pattern>
     </servlet-mapping>
+
+    <filter>
+        <filter-name>filterOne</filter-name>
+        <filter-class>com.hidenari.servletsample.FilterSample</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>filterOne</filter-name>
+        <url-pattern>/people</url-pattern>
+    </filter-mapping>
 </web-app>
