@@ -8,6 +8,11 @@
     <title>Person</title>
 </head>
 <body>
+<%!
+    private String outputHr(){
+        return "<hr>";
+    }
+%>
 <div>
     <%= request.getAttribute("initMsg") %>
 </div>
@@ -17,6 +22,7 @@
 <div>
     ${ conParam }
 </div>
+<%= outputHr() %>
 <div>
     <%
         if ((boolean) request.getAttribute("flg")) {
@@ -40,7 +46,7 @@
         <c:otherwise>false</c:otherwise>
     </c:choose>
 </div>
-
+<%= outputHr() %>
 <c:forEach items="${lists}" var="list">
     <div>
         <c:out value="${list}"/>
@@ -52,14 +58,13 @@
         <c:out value="${number}"/>
     </div>
 </c:forTokens>
-
+<%= outputHr() %>
 <div>
     <c:set var="name" value="taro"/>
     <c:out value="${name}"/>
     <c:remove var="name"/>
     <c:out value="${name}"/>
 </div>
-
 <div>
     <fmt:formatNumber value="1234567890" pattern="###,###"/>
 </div>
@@ -71,7 +76,7 @@
     <fmt:formatDate value="${date}" type="BOTH"/><br>
     <fmt:formatDate value="${date}" pattern="yyyyMMdd_HHmmss"/><br>
 </div>
-
+<%= outputHr() %>
 <br/>
 <a href="index.jsp">index</a>
 </body>
