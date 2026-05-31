@@ -77,6 +77,10 @@
     <fmt:formatDate value="${date}" pattern="yyyyMMdd_HHmmss"/><br>
 </div>
 <%= outputHr() %>
+
+<div>
+    <c:out value="${lisnenStr}"/>
+</div>
 <br/>
 <a href="index.jsp">index</a>
 </body>
