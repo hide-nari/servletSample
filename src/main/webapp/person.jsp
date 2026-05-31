@@ -9,7 +9,7 @@
 </head>
 <body>
 <%!
-    private String outputHr(){
+    private String outputHr() {
         return "<hr>";
     }
 %>
@@ -17,10 +17,10 @@
     <%= request.getAttribute("initMsg") %>
 </div>
 <div>
-    ${ initMsg }
+    ${initMsg}
 </div>
 <div>
-    ${ conParam }
+    ${conParam}
 </div>
 <%= outputHr() %>
 <div>
