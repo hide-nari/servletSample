@@ -79,7 +79,9 @@
 <%= outputHr() %>
 
 <div>
-    <c:out value="${lisnenStr}"/>
+    <%= application.getAttribute("listenerStr") %><br>
+    <c:out value="${applicationScope.listenerStr}"/><br>
+    <c:out value="${listenerStr}"/><br>
 </div>
 <br/>
 <a href="index.jsp">index</a>

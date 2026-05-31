@@ -11,8 +11,8 @@ public class ContextListener implements ServletContextListener {
     public void contextInitialized(ServletContextEvent sce) {
         System.out.println("contextInitialized");
         ServletContext context = sce.getServletContext();
-        String lisnenStr = "Listener Value";
-        context.setAttribute("lisnenStr", lisnenStr);
+        String listenerStr = "Listener Value";
+        context.setAttribute("listenerStr", listenerStr);
     }
 
     @Override
