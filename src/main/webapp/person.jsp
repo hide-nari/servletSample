@@ -1,6 +1,7 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="jakarta.tags.core" %>
 <%@ taglib prefix="fmt" uri="jakarta.tags.fmt" %>
+<%@ taglib prefix="sql" uri="jakarta.tags.sql" %>
 
 <!DOCTYPE html>
 <html>
@@ -101,6 +102,15 @@
     %>
 </div>
 
+<div>
+    <sql:setDataSource var="db" dataSource="jdbc/testdb"/>
+    <sql:query var="result" dataSource="${db}">
+        select * from department
+    </sql:query>
+    <c:forEach items="${result.rows}" var="row">
+        ${row.id} : ${row.name}
+    </c:forEach>
+</div>
 <a href="index.jsp">index</a>
 </body>
 </html>
