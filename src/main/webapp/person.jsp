@@ -1,3 +1,4 @@
+<%@ page import="java.util.Date" %>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="jakarta.tags.core" %>
 <%@ taglib prefix="fmt" uri="jakarta.tags.fmt" %>
@@ -76,11 +77,15 @@
 </div>
 
 <div>
+    <%--    <% pageContext.setAttribute("date", new Date()); %>--%>
     <jsp:useBean id="date" class="java.util.Date"/>
     <fmt:formatDate value="${date}" type="DATE"/><br>
     <fmt:formatDate value="${date}" type="TIME"/><br>
     <fmt:formatDate value="${date}" type="BOTH"/><br>
     <fmt:formatDate value="${date}" pattern="yyyyMMdd_HHmmss"/><br>
+    <c:set var="today" value="2026-12-31"/>
+    <fmt:parseDate value="${today}" pattern="yyyy-MM-dd" var="tmpToday"/>
+    ${tmpToday}
 </div>
 <%= outputHr() %>
 
@@ -105,7 +110,8 @@
 <div>
     <sql:setDataSource var="db" dataSource="jdbc/testdb"/>
     <sql:query var="result" dataSource="${db}">
-        SELECT * FROM department WHERE id = ?
+        SELECT * FROM department WHERE id in ( ? , ? )
+        <sql:param value="1"/>
         <sql:param value="2"/>
     </sql:query>
     <c:forEach items="${result.rows}" var="row">
