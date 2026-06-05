@@ -52,6 +52,11 @@
         <c:out value="${list}"/>
     </div>
 </c:forEach>
+<c:forEach var="i" begin="1" end="5" varStatus="status">
+    <div>
+        <c:out value="${i} -> ${status.current}"/>
+    </div>
+</c:forEach>
 
 <c:forTokens items="${numbersStr}" delims="," var="number">
     <div>
@@ -84,6 +89,18 @@
     <c:out value="${listenerStr}"/><br>
 </div>
 <br/>
+<div>
+    ${ pageContext }
+    <%
+        var headers = request.getHeaderNames();
+        while (headers.hasMoreElements()) {
+            out.println(headers.nextElement());
+        }
+//        response.setStatus(HttpServletResponse.SC_MOVED_TEMPORARILY);
+//        response.setHeader("Location", "https://laravel.com");
+    %>
+</div>
+
 <a href="index.jsp">index</a>
 </body>
 </html>

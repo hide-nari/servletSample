@@ -1,7 +1,7 @@
 # About this package
 ## Servlet sample application.
 
-On mac
+On Mac
 start up with command
 ```
 ./mvnw jetty:run
