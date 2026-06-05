@@ -105,7 +105,8 @@
 <div>
     <sql:setDataSource var="db" dataSource="jdbc/testdb"/>
     <sql:query var="result" dataSource="${db}">
-        select * from department
+        SELECT * FROM department WHERE id = ?
+        <sql:param value="2"/>
     </sql:query>
     <c:forEach items="${result.rows}" var="row">
         ${row.id} : ${row.name}
