@@ -3,6 +3,7 @@
 <%@ taglib prefix="c" uri="jakarta.tags.core" %>
 <%@ taglib prefix="fmt" uri="jakarta.tags.fmt" %>
 <%@ taglib prefix="sql" uri="jakarta.tags.sql" %>
+<%@ taglib prefix="fn" uri="jakarta.tags.functions" %>
 
 <!DOCTYPE html>
 <html>
@@ -118,6 +119,12 @@
         ${row.id} : ${row.name}
     </c:forEach>
 </div>
+
+<div>
+    <c:set var="functionVar" value="aiueo"/>
+    length : ${fn:length(functionVar)}
+</div>
+
 <a href="index.jsp">index</a>
 </body>
 </html>
