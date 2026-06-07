@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Context reloadable="true">
+    <Valve className="org.apache.catalina.valves.AccessLogValve"
+           directory="logs" prefix="localhost_access_log" suffix=".txt"
+           pattern="%t %U %T %a %b" resolveHosts="false" />
     <Resource
             name="jdbc/testdb"
             auth="Container"
