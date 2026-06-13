@@ -16,8 +16,12 @@
     ${initMsg}
 </div>
 <div>
-    ${conParam}
+    1: + ${conParam}
 </div>
+<div>
+    2: + ${initParam['conParam']}
+</div>
+
 <%= outputHr() %>
 <div>
     <%
