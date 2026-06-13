@@ -20,7 +20,7 @@ public class PersonServlet extends HttpServlet {
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
-        ServletContext context = getServletContext();        context.log("init");
+        ServletContext context = getServletContext();
         context.log("doGet");
         List<String> lists = List.of("one1", "two2", "three3");
         String numbersStr = "one,two,three";
