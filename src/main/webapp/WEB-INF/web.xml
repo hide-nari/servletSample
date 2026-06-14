@@ -54,7 +54,7 @@
     <security-constraint>
         <web-resource-collection>
             <web-resource-name>Auth</web-resource-name>
-            <url-pattern>/*</url-pattern>
+            <url-pattern>/people</url-pattern>
         </web-resource-collection>
         <auth-constraint>
             <role-name>admin</role-name>

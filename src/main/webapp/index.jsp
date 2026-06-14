@@ -9,5 +9,6 @@
 </h1>
 <br/>
 <a href="people">Person Servlet</a>
+<a href="login_cust.jsp">Auth login</a>
 </body>
 </html>
