@@ -4,7 +4,7 @@ import jakarta.servlet.jsp.JspException;
 import jakarta.servlet.jsp.JspWriter;
 import jakarta.servlet.jsp.tagext.TagSupport;
 
-public class CustTag extends TagSupport {
+public class CustomTag extends TagSupport {
     private String msg = "init";
     private String hr = "0";
 
@@ -13,7 +13,7 @@ public class CustTag extends TagSupport {
         JspWriter out = pageContext.getOut();
         try {
             out.print(msg);
-            if (hr == "1") {
+            if (hr.equals("1")) {
                 out.print("<hr>");
             }
         } catch (Exception e) {

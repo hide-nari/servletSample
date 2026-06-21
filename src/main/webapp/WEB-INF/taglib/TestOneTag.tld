@@ -13,7 +13,7 @@
 
     <tag>
         <name>testOne</name>
-        <tag-class>com.hidenari.servletsample.CustTag</tag-class>
+        <tag-class>com.hidenari.servletsample.CustomTag</tag-class>
         <body-content>empty</body-content>
         <attribute>
             <name>msg</name>
