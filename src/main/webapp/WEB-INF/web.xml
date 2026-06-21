@@ -47,6 +47,10 @@
     </error-page>
 
     <jsp-config>
+<!--        <taglib>-->
+<!--            <taglib-uri>https://custTag.org</taglib-uri>-->
+<!--            <taglib-location>/TestOneTag.tld</taglib-location>-->
+<!--        </taglib>-->
         <jsp-property-group>
             <display-name>JSTL INCLUDE</display-name>
             <url-pattern>*.jsp</url-pattern>
