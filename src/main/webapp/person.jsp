@@ -125,6 +125,8 @@
 <cs:testOne msg="メッセージone" hr="1"/>
 <cs:testOne msg="メッセージtwo"/>
 
+<cs:testTwo one="ichi" two="ni" three="さん"/>
+
 <a href="index.jsp">index</a>
 </body>
 </html>
