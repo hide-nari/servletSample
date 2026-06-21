@@ -125,7 +125,15 @@
 <cs:testOne msg="メッセージone" hr="1"/>
 <cs:testOne msg="メッセージtwo"/>
 
-<cs:testTwo one="ichi" two="ni" three="さん"/>
+<cs:testTwo one="ichi" two="ni" three="san"/>
+
+<div>
+    <ul>
+        <cs:testThree one="いち" two="に" three="さん">
+            <li>${key} : ${value}</li>
+        </cs:testThree>
+    </ul>
+</div>
 
 <a href="index.jsp">index</a>
 </body>
