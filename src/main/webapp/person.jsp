@@ -122,6 +122,9 @@
     length : ${fn:length(functionVar)}
 </div>
 
+<cs:testOne msg="メッセージone" hr="1"/>
+<cs:testOne msg="メッセージtwo"/>
+
 <a href="index.jsp">index</a>
 </body>
 </html>

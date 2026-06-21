@@ -3,3 +3,4 @@
 <%@ taglib prefix="fmt" uri="jakarta.tags.fmt" %>
 <%@ taglib prefix="sql" uri="jakarta.tags.sql" %>
 <%@ taglib prefix="fn" uri="jakarta.tags.functions" %>
+<%@ taglib prefix="cs" uri="https://custTag.org" %>
