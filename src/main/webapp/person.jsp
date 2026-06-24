@@ -8,6 +8,10 @@
     private String outputHr() {
         return "<hr>";
     }
+
+    private String parseNumber(int number) {
+        return java.text.NumberFormat.getCompactNumberInstance().format(number);
+    }
 %>
 <div>
     <%= request.getAttribute("initMsg") %>
@@ -133,6 +137,10 @@
             <li>${key} : ${value}</li>
         </cs:testThree>
     </ul>
+</div>
+
+<div>
+    <%= parseNumber(100000000) %>
 </div>
 
 <a href="index.jsp">index</a>
