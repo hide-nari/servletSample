@@ -8,7 +8,8 @@
 <h1><%= "Hello World!" %>
 </h1>
 <br/>
-<a href="people">Person Servlet</a>
-<a href="login_cust.jsp">Auth login</a>
+<a href="people">Person Servlet</a><br>
+<a href="login_cust.jsp">Auth login</a><br>
+<a href="mail">Mail</a><br>
 </body>
 </html>
