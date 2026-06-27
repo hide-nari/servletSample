@@ -143,6 +143,22 @@
     <%= parseNumber(100000000) %>
 </div>
 
+<div>
+    <div id="number_text">none</div>
+    <input type="text" id="input_number" value="10">
+    <input type="submit" id="testOne" value="view">
+</div>
 <a href="index.jsp">index</a>
+<script>
+    document.getElementById("testOne").addEventListener("click", function () {
+        let input_number = document.getElementById("input_number").value;
+        fetch("./json?input_number=" + input_number)
+            .then(response => response.json())
+            .then(data => {
+                resultObj = JSON.parse(data)
+                document.getElementById("number_text").innerHTML = resultObj.one;
+            })
+    })
+</script>
 </body>
 </html>
