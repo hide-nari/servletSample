@@ -14,8 +14,8 @@ public class JsonServlet extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         Gson gson = new Gson();
-        String input_number = request.getParameter("input_number");
-        String json = gson.toJson("{\"one\":" + input_number + ",\"two\":456,\"three\":789}");
+        int return_number = Integer.parseInt(request.getParameter("input_number")) * 10;
+        String json = gson.toJson("{\"one\":" + return_number + ",\"two\":456,\"three\":789}");
         response.setContentType("application/json;charset=UTF-8");
         response.getWriter().print(json);
     }
