@@ -12,5 +12,6 @@
 <a href="login_cust.jsp">Auth login</a><br>
 <a href="mail">Mail</a><br>
 <a href="json">Json</a><br>
+<a href="pdf">Pdf</a><br>
 </body>
 </html>
