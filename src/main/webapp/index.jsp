@@ -11,5 +11,6 @@
 <a href="people">Person Servlet</a><br>
 <a href="login_cust.jsp">Auth login</a><br>
 <a href="mail">Mail</a><br>
+<a href="json">Json</a><br>
 </body>
 </html>
