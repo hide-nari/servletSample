@@ -171,6 +171,19 @@
 </div>
 
 <div>
+    <table border="1">
+        <csTag:TestEightTag thirteen="じゅうさん" fourteen="じゅうよん" fifteen="じゅうご">
+            <jsp:attribute name="row">
+            <tr>
+                <td>${key}</td>
+                <td>${value}</td>
+            </tr>
+            </jsp:attribute>
+        </csTag:TestEightTag>
+    </table>
+</div>
+
+<div>
     <%= parseNumber(100000000) %>
 </div>
 
