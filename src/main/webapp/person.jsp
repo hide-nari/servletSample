@@ -154,6 +154,10 @@
 </div>
 
 <div>
+    <csTag:TestFiveTag msg="あいうえお" hr="1"/>
+</div>
+
+<div>
     <%= parseNumber(100000000) %>
 </div>
 
