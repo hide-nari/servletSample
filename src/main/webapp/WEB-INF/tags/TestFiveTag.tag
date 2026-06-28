@@ -3,8 +3,6 @@
 <%@ attribute name="hr" required="false" rtexprvalue="true" %>
 
 <%
-    String msg = (String) jspContext.getAttribute("msg");
-    String hr = (String) jspContext.getAttribute("hr");
     out.println(msg);
     if (hr.equals("1")) {
         out.print("<hr>");
