@@ -157,6 +157,8 @@
     <csTag:TestFiveTag msg="あいうえお" hr="1"/>
 </div>
 
+<csTag:TestSixTag seven="なな" eight="はち" nine="きゅう"/>
+
 <div>
     <%= parseNumber(100000000) %>
 </div>
