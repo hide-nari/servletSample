@@ -204,5 +204,9 @@
             })
     })
 </script>
+
+<div>
+    ${cs:getTestOne("taro")}
+</div>
 </body>
 </html>

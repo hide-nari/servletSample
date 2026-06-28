@@ -51,4 +51,11 @@
         <dynamic-attributes>true</dynamic-attributes>
     </tag>
 
+    <function>
+        <name>getTestOne</name>
+        <function-class>com.hidenari.servletsample.TestFunction</function-class>
+        <function-signature>
+            java.lang.String testOne(java.lang.String)
+        </function-signature>
+    </function>
 </taglib>
