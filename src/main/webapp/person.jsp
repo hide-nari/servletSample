@@ -112,14 +112,14 @@
 
 <div>
     <sql:setDataSource var="db" dataSource="jdbc/testdb"/>
-<%--    <sql:query var="result" dataSource="${db}">--%>
-<%--        SELECT * FROM department WHERE id in ( ? , ? )--%>
-<%--        <sql:param value="1"/>--%>
-<%--        <sql:param value="2"/>--%>
-<%--    </sql:query>--%>
-<%--    <c:forEach items="${result.rows}" var="row">--%>
-<%--        ${row.id} : ${row.name}--%>
-<%--    </c:forEach>--%>
+    <%--    <sql:query var="result" dataSource="${db}">--%>
+    <%--        SELECT * FROM department WHERE id in ( ? , ? )--%>
+    <%--        <sql:param value="1"/>--%>
+    <%--        <sql:param value="2"/>--%>
+    <%--    </sql:query>--%>
+    <%--    <c:forEach items="${result.rows}" var="row">--%>
+    <%--        ${row.id} : ${row.name}--%>
+    <%--    </c:forEach>--%>
 </div>
 
 <div>
@@ -138,6 +138,19 @@
             <li>${key} : ${value}</li>
         </cs:testThree>
     </ul>
+</div>
+
+<div>
+    <table border="1">
+        <cs:testFour four="よん" five="ご" six="ろく">
+            <jsp:attribute name="row">
+            <tr>
+                <td>${key}</td>
+                <td>${value}</td>
+            </tr>
+            </jsp:attribute>
+        </cs:testFour>
+    </table>
 </div>
 
 <div>

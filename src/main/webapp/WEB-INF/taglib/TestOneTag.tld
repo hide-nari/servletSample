@@ -39,4 +39,16 @@
         <dynamic-attributes>true</dynamic-attributes>
     </tag>
 
+    <tag>
+        <name>testFour</name>
+        <tag-class>com.hidenari.servletsample.CustomFourTag</tag-class>
+        <body-content>scriptless</body-content>
+        <attribute>
+            <name>row</name>
+            <required>true</required>
+            <fragment>true</fragment>
+        </attribute>
+        <dynamic-attributes>true</dynamic-attributes>
+    </tag>
+
 </taglib>
