@@ -160,6 +160,17 @@
 <csTag:TestSixTag seven="なな" eight="はち" nine="きゅう"/>
 
 <div>
+    <table border="1">
+        <csTag:TestSevenTag ten="じゅう" eleven="じゅういち" twelve="じゅうに">
+            <tr>
+                <td>${key}</td>
+                <td>${value}</td>
+            </tr>
+        </csTag:TestSevenTag>
+    </table>
+</div>
+
+<div>
     <%= parseNumber(100000000) %>
 </div>
 
