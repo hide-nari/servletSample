@@ -20,3 +20,8 @@ password generate
 ```
 /Applications/Eclipse_2025-12.app/Contents/tomcat/11/bin/digest.sh -a SHA-512 pass
 ```
+
+port setting
+```
+mvnw jetty:run -Djetty.http.port=8080
+```
