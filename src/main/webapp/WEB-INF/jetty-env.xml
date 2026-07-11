@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Configure PUBLIC "-//Jetty//Configure//EN" "https://www.eclipse.org/jetty/configure_10_0.dtd">
+<Configure class="org.eclipse.jetty.webapp.WebAppContext">
+    <New id="testdb" class="org.eclipse.jetty.plus.jndi.Resource">
+        <Arg>jdbc/testdb</Arg>
+        <Arg>
+            <New class="com.mysql.cj.jdbc.MysqlDataSource">
+                <Set name="Url">jdbc:mysql://localhost:3306/laravel</Set>
+                <Set name="User">root</Set>
+                <Set name="Password"></Set>
+            </New>
+        </Arg>
+    </New>
+</Configure>
